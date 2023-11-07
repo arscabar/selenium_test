@@ -1,0 +1,30 @@
+{
+  "name": "@seleniumhq/code-export",
+  "version": "1.0.0",
+  "description": "AO Recoder code export",
+  "repository": "https://github.com/SeleniumHQ/selenium-ide",
+  "keywords": [
+    "selenium",
+    "ide",
+    "export"
+  ],
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "build": "babel -d dist src --ignore=__test__",
+    "watch": "yarn build -w"
+  },
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "dependencies": {
+    "@seleniumhq/code-export-csharp-nunit": "^1.0.0",
+    "@seleniumhq/code-export-csharp-xunit": "^1.0.0",
+    "@seleniumhq/code-export-java-junit": "^1.0.0",
+    "@seleniumhq/code-export-javascript-mocha": "^1.0.0",
+    "@seleniumhq/code-export-python-pytest": "^1.0.0",
+    "@seleniumhq/code-export-ruby-rspec": "^1.0.0"
+  }
+}

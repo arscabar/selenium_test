@@ -1,0 +1,154 @@
+::-moz-focus-inner {
+  border: 0;
+}
+
+:root {
+  --hover-color: #f3f3f3;
+  --active-color: #d8ebfb;
+  --selected-color: #e8f1f8;
+  --selected-border-color: #4d90fe;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  font-family: system, -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    Arial, sans-serif !important;
+  font-size: 14px;
+  color: #505050;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #505050;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #505050;
+}
+
+a.link {
+  color: #333;
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: initial;
+}
+
+input,
+textarea {
+  border: 1px #dcdcdc solid;
+  color: #3f3f3f;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: max(17px, 1.5em);
+  padding: 2px 5px;
+}
+
+textarea {
+  resize: none;
+  font-family: inherit;
+}
+
+input:disabled,
+textarea:disabled {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+  cursor: not-allowed;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0a0a0;
+}
+
+* {
+  outline: 0;
+}
+
+:focus {
+  outline: var(--selected-border-color) 1px solid;
+}
+
+hr {
+  background-color: #e5e5e5;
+  border: 0;
+  height: 1px;
+}
+
+form .form-contents {
+  margin: 10px 0;
+}
+
+code,
+.code {
+  font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.dragging {
+  cursor: move !important;
+  cursor: grabbing !important;
+}
+
+.passed {
+  color: #276533 !important;
+}
+
+.failed {
+  color: #df0006 !important;
+}
+
+.action-text,
+.btn {
+  text-transform: capitalize;
+}
+
+.hidden {
+  height: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.container.enable-big-spacing,
+.modal-content.enable-big-spacing,
+.menu.content.enable-big-spacing,
+.container.enable-big-spacing input,
+.modal-content.enable-big-spacing input,
+.menu.content.enable-big-spacing input,
+.container.enable-big-spacing button,
+.modal-content.enable-big-spacing button,
+.menu.content.enable-big-spacing button {
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+}
